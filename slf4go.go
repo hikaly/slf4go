@@ -42,7 +42,7 @@ func GetLogFileNameAndLine() *[]byte {
 }
 
 //
-// log faced
+// log facade
 func Trace(format string, data ...interface{}) {
 	Logout(LL_Trace, GetCurrentTimeString(), fmt.Sprintf(format, data...), GetLogFileNameAndLine())
 }
